@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@color/black"
+    android:textDirection="firstStrong"
+    tools:context=".ScannerActivity">
+
+    <Button
+        android:id="@+id/Scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="Scanner"
+        android:text="Scanner"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="320dp"
+        android:background="@color/teal_200"
+        android:foregroundGravity="center"
+        android:gravity="center"
+
+        android:text="Result appear here"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scanner"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
